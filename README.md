@@ -1,0 +1,3 @@
+Entidades escolhidas 
+ - Diciplina
+ - Pessoa
