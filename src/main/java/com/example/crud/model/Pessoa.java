@@ -59,5 +59,4 @@ public class Pessoa {
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
     }
-
 }
