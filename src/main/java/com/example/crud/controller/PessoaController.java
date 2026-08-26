@@ -36,12 +36,12 @@ public class PessoaController {
     }
 
     @PutMapping("/{id}")
-    public Pessoa atualizarPessoa(@PathVariable Long id, @RequestBody Pessoa pessoa) {
+    public Pessoa atualizarPessoa(@PathVariable String id, @RequestBody Pessoa pessoa) {
         return service.atualizarPessoa(id, pessoa);
     }
 
     @DeleteMapping("/{id}")
-    public void excluir(@PathVariable Long id) {
+    public void excluir(@PathVariable String id) {
         service.excluirPessoa(id);
     }
 

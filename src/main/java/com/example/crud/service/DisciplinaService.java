@@ -20,7 +20,7 @@ public class DisciplinaService {
         return repository.findAll();
     }
 
-    public Optional<Disciplina> listarById(Long id) {
+    public Optional<Disciplina> listarById(String id) {
         return repository.findById(id);
     }
 
@@ -28,7 +28,7 @@ public class DisciplinaService {
         return repository.save(disciplina);
     }
 
-    public void excluirDisciplina(Long id) {
+    public void excluirDisciplina(String id) {
         repository.deleteById(id);
     }
 }

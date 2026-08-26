@@ -24,7 +24,7 @@ public class PessoaService {
         return repository.save(pessoa);
     }
 
-    public Pessoa atualizarPessoa(@PathVariable Long id, Pessoa novaPessoa) {
+    public Pessoa atualizarPessoa(@PathVariable String id, Pessoa novaPessoa) {
         return repository.findById(id).map(p -> {
             p.setNome(novaPessoa.getNome());
             p.setIdade(novaPessoa.getIdade());
@@ -34,7 +34,7 @@ public class PessoaService {
         }).orElseThrow(() -> new RuntimeException("Pessoa nao encontrada"));
     }
 
-    public void excluirPessoa(Long id) {
+    public void excluirPessoa(String id) {
         repository.deleteById(id);
     }
 }

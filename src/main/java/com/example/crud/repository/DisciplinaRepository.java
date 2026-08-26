@@ -4,5 +4,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.example.crud.model.Disciplina;
 
-public interface DisciplinaRepository extends MongoRepository<Disciplina, Long> {
+public interface DisciplinaRepository extends MongoRepository<Disciplina, String> {
 }

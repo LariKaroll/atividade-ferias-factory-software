@@ -36,7 +36,7 @@ public class DisciplinaController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Disciplina> listarById(@RequestParam Long id) {
+    public Optional<Disciplina> listarById(@RequestParam String id) {
         return service.listarById(id);
     }
     
@@ -52,7 +52,7 @@ public class DisciplinaController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id) {
+    public void delete(@PathVariable String id) {
         service.excluirDisciplina(id);
     }
 }
